@@ -2,13 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
-    steps {
-        git branch: 'main', url: 'https://github.com/manns1987/TICTO.git'
-        }
-                        }
-        }
-
         stage('Setup Python') {
             steps {
                 bat '''
