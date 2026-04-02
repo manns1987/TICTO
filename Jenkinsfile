@@ -3,9 +3,10 @@ pipeline {
 
     stages {
         stage('Checkout') {
-            steps {
-                git 'https://github.com/manns1987/TICTO.git'
-            }
+    steps {
+        git branch: 'main', url: 'https://github.com/manns1987/TICTO.git'
+        }
+                        }
         }
 
         stage('Setup Python') {
